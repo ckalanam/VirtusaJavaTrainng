@@ -4,5 +4,4 @@ public class TextPrinterLambda {
         Printer p = ()-> System.out.println("Hi");
         p.print();
     }
-
 }

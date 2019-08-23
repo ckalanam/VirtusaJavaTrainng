@@ -36,6 +36,7 @@ public class Filter {
     }
 
     static void process(){
+
         // with out for each keyword
         /*List <Student> students = Student.getStudent()
                 .stream().map(s->new Student("Dr "+s.getName(),s.getId()))
@@ -50,7 +51,7 @@ public class Filter {
 
     static void filterWithStream(){
         List<Student> students = Student.getStudent()
-                .stream().filter(s->s.getName().length()<=7)
+                .stream().filter(s->s.getName().length()<=6)
                 .collect(Collectors.toList());
         System.out.println(students);
     }
@@ -59,10 +60,8 @@ public class Filter {
         List<Student> students = Student.getStudent();
 
         for (Student student:students){
-            if (student.getName().length()<=6){
+            if (student.getName().length()<=6)
                 System.out.println(student.getName());
             }
-        }
     }
-
 }
