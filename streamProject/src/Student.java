@@ -31,12 +31,12 @@ public class Student {
     public static List<Student> getStudent(){
         List <Student> students = new ArrayList<>();
         students.add(new Student("Krish",1));
-        students.add(new Student("Hasini",2));
+        students.add(new Student("Hasini",22));
         students.add(new Student("Bhagya",11));
-        students.add(new Student("Suranga",12));
+        students.add(new Student("Suranga",123));
         students.add(new Student("Nuwan",21));
-        students.add(new Student("Praveen",22));
-        students.add(new Student("Shehanza",31));
+        students.add(new Student("Praveen",222));
+        students.add(new Student("Shehanza",3));
         return students;
     }
 

@@ -35,7 +35,7 @@ public class Filter {
         System.out.println(students);
     }
 
-    static void process(){
+    static void process(){ //one kind of a stream
 
         // with out for each keyword
         /*List <Student> students = Student.getStudent()

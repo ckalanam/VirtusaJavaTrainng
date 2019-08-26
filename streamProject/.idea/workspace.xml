@@ -16,6 +16,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1Pm6NVmb73BZ6g7tLx5U48kX68T" />
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -28,7 +31,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SortWithLambda">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application" />
+      <module name="streamProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Filter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Filter" />
       <module name="streamProject" />
@@ -36,9 +46,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SortWithLambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SortWithLambda" />
+      <module name="streamProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortWithStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SortWithStream" />
+      <module name="streamProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SortWithLambda" />
         <item itemvalue="Application.Filter" />
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.SortWithStream" />
       </list>
     </recent_temporary>
   </component>
