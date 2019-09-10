@@ -6,22 +6,15 @@ import java.nio.Buffer;
 public class ApplicationReadWrite {
 
     public static void main(String[] args) throws Exception {
+
         // Below methods are created as static. therefore we can call these methods without creating objects.
         System.out.println("\n 2). Read and Write functions\n");
         writeFile();
-        System.out.println("writeFile() method has executed!");
-        System.out.println("File has written successfully!\n");
         readFile();
-        System.out.println("readFile() method has executed!");
-        System.out.println("File has read successfully!\n");
         System.out.println("\n3). Read and Write functions with resource\n");
         tryWriteWithResources();
-        System.out.println("tryWriteWithResources() method has executed!");
-        System.out.println("File has written successfully!\n");
         tryReadWithResources();
-        System.out.println("tryReadWithResources() method has executed!");
-        System.out.println("File has read successfully!\n");
-    }
+        }
 
     public static void readFile() /*throws Exception*/{
 
@@ -50,6 +43,9 @@ public class ApplicationReadWrite {
             brObj.close();
             frObj.close();
 
+            System.out.println("readFile() method has executed!");
+            System.out.println("File has read successfully!\n");
+
         }catch(Exception e){
 
         }
@@ -70,6 +66,9 @@ public class ApplicationReadWrite {
             bwObj.close();
             fwObj.close();
 
+            System.out.println("writeFile() method has executed!");
+            System.out.println("File has written successfully!\n");
+
         }catch(Exception e){
 
         }
@@ -84,6 +83,10 @@ public class ApplicationReadWrite {
             String readPhrase;
             while((readPhrase=brObj.readLine())!=null)
                 System.out.println(readPhrase);
+
+            System.out.println("tryReadWithResources() method has executed!");
+            System.out.println("File has read successfully!\n");
+
         }catch(Exception e){
 
         }
@@ -97,7 +100,11 @@ public class ApplicationReadWrite {
             for(int mover=0;mover<=15;mover++){
                 bwObj.write(""+mover);
                 bwObj.newLine();
-            }
+                }
+
+            System.out.println("tryWriteWithResources() method has executed!");
+            System.out.println("File has written successfully!\n");
+
         }catch(Exception e){
 
         }
