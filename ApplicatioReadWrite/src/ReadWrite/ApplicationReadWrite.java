@@ -8,7 +8,7 @@ public class ApplicationReadWrite {
     public static void main(String[] args) throws Exception {
 
         // Below methods are created as static. therefore we can call these methods without creating objects.
-        System.out.println("\n 2). Read and Write functions\n");
+        System.out.println("\n2). Read and Write functions\n");
         writeFile();
         readFile();
         System.out.println("\n3). Read and Write functions with resource\n");
