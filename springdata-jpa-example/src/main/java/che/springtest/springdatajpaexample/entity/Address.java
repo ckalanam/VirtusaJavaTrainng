@@ -1,5 +1,7 @@
 package che.springtest.springdatajpaexample.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -13,6 +15,7 @@ public class Address {
     String aName;
 
     @OneToMany (mappedBy = "address")//@Column(name="studentId")
+            @JsonIgnore
             List <Student> studentArray2;
 
     public Integer getAid() {

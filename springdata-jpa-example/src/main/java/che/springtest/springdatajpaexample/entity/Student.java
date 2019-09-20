@@ -22,8 +22,8 @@ public class Student {
     }
 
     //regarding to the relationship with laptop class
-//    @OneToOne(mappedBy = "sId")
-//    Integer lId;
+/*    @OneToOne(mappedBy = "student")
+    Integer lId;*/
 
     //regarding to the relationship with project class
     @ManyToMany //@Column(name="projectId")

@@ -18,7 +18,7 @@ public class studentController {
     @Autowired
     StudentServiceImpl studentService;
 
-    @RequestMapping(value = "hellow")
+    @RequestMapping(value = "hello")
     public String greeting(){
         return "hello springboot";
     }
@@ -38,21 +38,21 @@ public class studentController {
         return studentService.getStudent(id);
     }
 
-//    @RequestMapping(value = "/students", method = RequestMethod.GET)
-//    public Student getStudent(){
-//
-//        Student student = new Student();
-//        //student.setStuId();
-//        student.setName("Saman");
-//        Address address = new Address();
-//        address.setaName("Galle");
-//        student.setAddress(address);
-//
-//        List<Telephone> telephones = new ArrayList<>();
-//        Telephone telephone = new Telephone();
-//        telephone.settNo("09873");
-//        telephones.add(telephone);
-//        student.setTelephoneArray(telephones);
-//        return student;
-//    }
+/*    @RequestMapping(value = "/students", method = RequestMethod.GET)
+    public Student getStudent(){
+
+        Student student = new Student();
+        //student.setStuId();
+        student.setName("Saman");
+        Address address = new Address();
+        address.setaName("Galle");
+        student.setAddress(address);
+
+        List<Telephone> telephones = new ArrayList<>();
+        Telephone telephone = new Telephone();
+        telephone.settNo("09873");
+        telephones.add(telephone);
+        student.setTelephoneArray(telephones);
+        return student;
+    }*/
 }

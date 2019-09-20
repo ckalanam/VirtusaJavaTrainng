@@ -1,5 +1,7 @@
 package che.springtest.springdatajpaexample.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 
 @Entity
@@ -13,6 +15,7 @@ public class Telephone {
     String tNo;
 
     @ManyToOne //@Column(name="studentId")
+    @JsonIgnore
     Student student;
 
 
