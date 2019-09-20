@@ -14,8 +14,10 @@ public class UserConfigurations extends GlobalAuthenticationConfigurerAdapter {
     @Override
     public void init(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
-                .withUser("chetha").password(passwordEncoder.encode("chethapass")).roles("USER","ADMIN","MANAGER")
-                .authorities("CAN READ","CAN WRITE","CAN DELETE").and()
+                .withUser("chetha").password(passwordEncoder.encode("123"))
+                .roles("USER","ADMIN","MANAGER")
+                .authorities("CAN READ","CAN WRITE","CAN DELETE")
+                .and()
                 .withUser("kala").password(passwordEncoder.encode("kalapass"))
                 .roles("USER")
                 .authorities("CAN READ","CAN WRITE");

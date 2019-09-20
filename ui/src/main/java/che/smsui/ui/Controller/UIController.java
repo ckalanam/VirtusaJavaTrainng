@@ -28,6 +28,6 @@ public class UIController extends WebSecurityConfigurerAdapter {
 
     @RequestMapping(value = "/load")
     public String methodLoad(){
-        return "index"; // this should be same as the name of .html file
+        return "home"; // this should be same as the name of .html file
     }
 }

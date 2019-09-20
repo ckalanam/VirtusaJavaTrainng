@@ -12,5 +12,4 @@ server:
   servlet:
     session:
       cookie:
-        name: CH
-
+        name: KS
