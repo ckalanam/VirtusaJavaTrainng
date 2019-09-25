@@ -36,6 +36,10 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-security</artifactId>
 		</dependency>
+<<<<<<< HEAD
+=======
+
+>>>>>>> f3dadcfe1b5d2c1ca5ed104e667a4e853c2e4cc4
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -46,10 +50,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
+=======
+>>>>>>> f3dadcfe1b5d2c1ca5ed104e667a4e853c2e4cc4
 	</dependencies>
 
 	<dependencyManagement>
