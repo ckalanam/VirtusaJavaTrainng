@@ -35,16 +35,14 @@ public class VariableScope {
 
 //    public static void main(String[] args) {
 
-        // blockLevelAccess not visible outside the method implementation
-        blockLevelAccess = 30;
+    // blockLevelAccess not visible outside the method implementation
+    blockLevelAccess = 30;
 
-        // classLevelAccess is visible outside the for loop
-        classLevelAccess = 30;
+    // classLevelAccess is visible outside the for loop
+    classLevelAccess = 30;
 
-        // methodLevelAccess is visible outside the for loop
-        methodLevelAccess = 30;
-
-//        System.out.println(classLevelAccess + " " + methodLevelAccess + " " + blockLevelAccess);
+    // methodLevelAccess is visible outside the for loop
+    methodLevelAccess = 30;
 
 //    }
 
