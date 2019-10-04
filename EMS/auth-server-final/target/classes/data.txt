@@ -1,0 +1,35 @@
+insert into oauth_client_details (client_id, client_secret, web_server_redirect_uri, scope, access_token_validity, refresh_token_validity, resource_ids, authorized_grant_types, additional_information) values ('mobile', '{bcrypt}$2a$10$gPhlXZfms0EpNHX0.HHptOhoFD1AoxSr/yUIdTqA8vtjeP4zi0DDu', 'http://localhost:8084/login', 'READ,WRITE', '3600', '10000', 'inventory,payment', 'authorization_code,password,refresh_token,implicit', '{}');
+
+insert into permission (name) values
+('create_profile'),
+('read_profile'),
+('update_profile'),
+('delete_profile');
+
+insert into role (name) values
+    ('ROLE_manager'),('ROLE_operator');
+
+insert into permission_role (permission_id, role_id) values
+ (1,1), /* create manager */
+ (2,1), /* read manager */
+ (3,1), /* update manager */
+ (4,1), /* delete manager */
+ (2,2);  /* read operator */
+/*     (3,2);   update operator */
+
+--improved way of the insert into
+insert into user (id, username,password, email, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked) values
+('1', 'chetha', '{bcrypt}$2a$10$WQYCYHBPYJ7Xw14A8Hd7w.o9EY8YKi6qRvdKyDA6P02K/kRlhrYwO', 'ckalana89@yahoo.com', '1', '1', '1', '1'),
+('2', 'kala', '{bcrypt}$2a$10$WQYCYHBPYJ7Xw14A8Hd7w.o9EY8YKi6qRvdKyDA6P02K/kRlhrYwO', 'ckalana89@yahoo.com', '1', '1', '1', '1');
+
+--older way of insert into
+--insert into user (id, username,password, email, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked) values ('1', 'chetha','{bcrypt}$2a$10$WQYCYHBPYJ7Xw14A8Hd7w.o9EY8YKi6qRvdKyDA6P02K/kRlhrYwO', 'ckalana89@yahoo.com', '1', '1', '1', '1');
+--insert into user (id, username,password, email, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked) values ('2', 'kala', '{bcrypt}$2a$10$WQYCYHBPYJ7Xw14A8Hd7w.o9EY8YKi6qRvdKyDA6P02K/kRlhrYwO','ckalana89@yahoo.com', '1', '1', '1', '1');
+
+insert into role_user (role_id, user_id) values
+    (1, 1) /* chetha-manager */,
+    (2, 2) /* kala-operator */ ;
+
+--update queries
+--update user set username="chetha",password="{bcrypt}$2a$10$WQYCYHBPYJ7Xw14A8Hd7w.o9EY8YKi6qRvdKyDA6P02K/kRlhrYwO",email="ckalana89@yahoo.com" where id=1;
+--update user set username="kala",password="{bcrypt}$2a$10$WQYCYHBPYJ7Xw14A8Hd7w.o9EY8YKi6qRvdKyDA6P02K/kRlhrYwO",email="ckalana89@yahoo.com" where id=2;
