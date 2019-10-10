@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>EMS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href = "css/styles.css" rel = "stylesheet"/>
+</head>
+
+<div><br></div>
+
+<div class="container">
+    <div class="jumbotron bg-dark text-white" align="center">
+        <div class="container">
+            <div class="row">
+                <div class="col" align="left">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="oop.png" width="130" height="100" alt="Sample Logo">
+                            </td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>
+                                <h2 class="display-4">Employee Management System</h2>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col">
+                    <div class="container" align="right">
+                        <table style="width:20px">
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td>
+                                    <!-- Button trigger modal for Create New Project -->
+                                    <button type="button" class="btn btn-outline-light btn-lg" data-toggle="modal" data-target="#createEmployeeModalCenter">
+                                        Create New Project
+                                    </button>
+                                    <!-- Modal for Create New Project -->
+                                    <div class="modal fade" id="createEmployeeModalCenter" tabindex="-1" role="dialog" aria-labelledby="createEmployeeModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 id="createEmployeeModalLongTitle" style="color:black;">Add New Project</h4>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="jumbotron bg-dark text-white">
+                                                        <form>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <label for="recipient-fname" class="col-form-label">Project Code:</label>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="recipient-fname" placeholder="Enter project code">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <label for="recipient-lname" class="col-form-label">Project Name:</label>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="recipient-lname" placeholder="Enter project name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <label for="message-address" class="col-form-label">Project Owner:</label>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <textarea class="form-control" id="message-address" placeholder="Enter the name of project owner"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <label for="recipient-tel" class="col-form-label">Due Date:</label>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <input type="date" class="form-control" id="recipient-tel" placeholder="Enter the due date">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <label for="recipient-bday" class="col-form-label">Commenced Date:</label>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <input type="date" class="form-control" id="recipient-bday" placeholder="Enter Commenced date">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col" align="left">
+                                                            <button type="button" class="btn btn-outline-dark" data-dismiss="modal" align="left">Close</button>
+                                                        </div>
+                                                        <div class="col" align="right">
+                                                            <button type="button" class="btn btn-outline-dark">Save</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="jumbotron">
+        <H2><b>Existing Project Details!</b></H2>
+        <table class="table table-sm table-dark" align="center">
+            <thead>
+            <tr>
+                <th scope="col" style="font-size:12px;">Project Code</th>
+                <th scope="col" style="font-size:12px;">Project Name</th>
+                <th scope="col" style="font-size:12px;">Project Owner</th>
+                <th scope="col" style="font-size:12px;">Due Date</th>
+                <th scope="col" style="font-size:12px;">Commenced Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>P908</td>
+                <td>Polixia</td>
+                <td>NYL</td>
+                <td>2019/02/05</td>
+                <td>2000/02/12</td>
+            </tr>
+            <tr>
+                <td>S9897</td>
+                <td>BI</td>
+                <td>EAG</td>
+                <td>2004/02/03</td>
+                <td>1988/02/12</td>
+            </tr>
+            <tr>
+                <td>K907</td>
+                <td>Digital</td>
+                <td>NYL</td>
+                <td>2001/02/17</td>
+                <td>2000/02/12</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<body>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

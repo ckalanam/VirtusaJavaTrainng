@@ -1,0 +1,15 @@
+security:
+  oauth2:
+    client:
+      client-id: web
+      client-secret: webpass
+      user-authorization-uri: http://localhost:8091/oauth/authorize
+      access-token-uri: http://localhost:8091/oauth/token
+    resource:
+      token-info-uri: http://localhost:8091/oauth/check_token
+server:
+  port: 8092
+  servlet:
+    session:
+      cookie:
+        name: COOKIE-FINAL
